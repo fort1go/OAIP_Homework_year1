@@ -1,12 +1,13 @@
 #include <iostream>
-#include <string>
+#include <fstream>
 #include <cmath>
 using namespace std;
 
 int main() {
+
+    fstream inputFile("in2.dat");
     double a, a2, a4, a5, a8, a13;
-    cout << "Введите a: ";
-    cin >> a;
+    inputFile >> a;
 
     a2 = a * a;
     a4 = a2 * a2;
